@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+    body{
+        background: -webkit-linear-gradient(to right, #267871, #136a8a);
+        background: linear-gradient(to right, #267871, #136a8a); 
+
+    }
+    .navbar{
+        background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);
+        background: linear-gradient(to right, #2c3e50, #bdc3c7); 
+
+    }
+    .span{
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-image{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+    .footer-header{
+        background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+        background: linear-gradient(to right, #99f2c8, #1f4037); 
+
+    }
+    .footer-bottom{
+        background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+        background: linear-gradient(to right, #99f2c8, #1f4037); 
+    }
+    .image-fluid{
+        width: 150px;
+        height: 150px;
+        border-radius: 10px;
+
+    }
+    .container{
+        height: 580px;
+        
+    }
+    .product-quantity{
+        height: 30px;
+    }
+
+    .container-body{
+        height: 200px;
+    }
+    .summary-row span{
+        gap: 50px;
+    }
+</style>
+<body>
+<div class="navbar navbar-expand-lg navbar-light p-1">
+    <div class="container-fluid">
+        <img src="logo.jpg" class="nav-image " alt="view image">
+        <a class="navbar-brand fs-1 fw-bold"  href="#">ⒺⓁⒾⓉⒺ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <input class="form-control w-50 ms-5 border-4" type="search" placeholder="🔍︎Search for products..." aria-label="Search">
+        <div class="collapse navbar-collapse justify-content-center fw-bold fs-4" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item text-center">
+                    <span class="account-logo">👤</span>
+                    <a class="nav-link active" href="home.html">Account</a>
+                </li>
+                <li class="nav-item text-center">
+                    <span class="wish-logo text-center">♡</span>
+                    <a class="nav-link active" href="">Wishlist</a>
+                </li>
+                <li class="nav-item text-center">
+                    <span class="login-logo">🛒</span>
+                    <a class="nav-link active" href="cart.html">Cart</a>
+                </li>
+                <li class="nav-item text-center">
+                    <span class="track-logo"></span>📦</span>
+                    <a class="nav-link active" href="">Track Order</a>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+</div>
+<div class="navbar navbar-expand-lg navbar-light p-1">
+    <div class="container-fluid border">
+        <div class="collapse navbar-collapse justify-content-center fw-bold fs-4" id="navbarNav">
+            <ul class="navbar-nav  gap-3">
+                <li class="nav-item text-center">
+                    <a class="nav-link active fs-5" href="">MEN</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link active fs-5" href="">WOMEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="">PREMIUM WATCHES</a>
+                </li>
+                <li class="nav-item text-center">
+                    <a class="nav-link active fs-5" href="">SMART WATCHS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="">DIGITAL WATCHES</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link active fs-5" href="">INTERNATIONAL WATCHES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="product-html">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active fs-5" href="">About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="d-flex">
+    <div class="container bg-secondary w-50 mt-5 text-center rounded">
+        <div class="cart-header d-flex  fs-5 fw-bold">
+            <div class="cart-headings ms-5">
+                Product Image
+            </div>
+            <div class="cart-headings ms-5">
+                Product Name
+            </div>
+            <div class="cart-headings ms-5">
+                Product Price
+            </div>
+            <div class="cart-headings ms-5">
+                Product Quantity
+            </div>
+        </div>
+        <div class="cart-body d-flex gap-5 mt-3 text-center border-top">
+            <div class="cart-image">
+                <img src="smart.jpg" class="image-fluid"  alt="image">
+            </div>
+            <div class="cart-body d-flex mt-5  gap-5">
+                <p class="product-name w-5">Smart Watches</p>
+                <div class="price-section ms-5">
+                    <p class="product-price">₹2999</p>
+                    <a class="product-remove text-light" href="">Remove</a>
+                </div>
+                <div class="cart-buttons d-flex ms-5">
+                    <button class="product-quantity">+</button>
+                    <p class="product-number">1</p>
+                    <button class="product-quantity">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-body d-flex gap-5 text-center border-top">
+            <div class="cart-image">
+                <img src="premium.jpg" class="image-fluid mt-3"  alt="image">
+            </div>
+            <div class="cart-body d-flex mt-5  gap-5">
+                <p class="product-name w-5">Premieum Watches</p>
+                <div class="price-section ms-5">
+                    <p class="product-price">₹2999</p>
+                    <a class="product-remove text-light" href="">Remove</a>
+                </div>
+                <div class="cart-buttons d-flex ms-5">
+                    <button class="product-quantity">+</button>
+                    <p class="product-number">1</p>
+                    <button class="product-quantity">-</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-body d-flex gap-5 text-center border-top">
+            <div class="cart-image">
+                <img src="digital.jpg" class="image-fluid mt-3"  alt="image">
+            </div>
+            <div class="cart-body d-flex mt-5  gap-5">
+                <p class="product-name w-5">Digital Watches</p>
+                <div class="price-section ms-5">
+                    <p class="product-price">₹2999</p>
+                    <a class="product-remove text-light" href="">Remove</a>
+                </div>
+                <div class="cart-buttons d-flex ms-5">
+                    <button class="product-quantity">+</button>
+                    <p class="product-number">1</p>
+                    <button class="product-quantity">-</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-body  bg-secondary w-25 mt-5 me-5 rounded">
+        <div class="summary-section">
+            <h2 class="order-summary text-center">Order Summary</h2>
+            <div class="summary-row text-center lh-lg">
+                <span>Subtotal</span>
+                <span>$999</span>
+            </div>
+            <div class="summary-row text-center lh-lg">
+                <span>shipping</span>
+                <span>$1499</span>
+            </div>
+            <div class="summary-row text-center lh-lg">
+                <span>Discount</span>
+                <span>$-499</span>
+            </div>
+            <div class="total text-center lh-lg border-top">
+                <span>Total</span>
+                <span>1000</span>
+            </div>
+            <button class="checkout  w-100 text-center">Proceed to checkout</button>
+        </div>
+    </div>
+</div>
+<footer class="footer-header  text-white">
+  <div class="container-fluid d-flex justify-content-between">
+    <div class="footer-box">
+      <h2 class="quick-title  mt-2 text-center mb-3 fw-bold">ELITE SUPER WATCHES</h2>
+      <ul class="text-center fs-5 fw-bold list-unstyled">
+        <li class="footer-items"><a class="nav-link text-dark" href="#">About Us</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Privacy Policy</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Categories</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Brands</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Services</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h2 class="service-title  text-center mt-2 fw-bold">Categories</h2>
+      <ul class="text-center fs-5  fw-bold list-unstyled">
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Smart Watches</a></li>
+        <li class="footer-items"><a class="nav-link text-dark"href="#">Premieum Watches</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Digital Watches</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Wrist Watches</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">Apple Watches</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h2 class="product-title  text-center mt-2 fw-bold">Brands</h2>
+      <ul class="text-center fs-5 fw-bold list-unstyled">
+        <li class="footer-items"><a class="nav-link text-dark" href="#">TITAN</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">FASTRACK</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">QUARTZ</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">SONATA</a></li>
+        <li class="footer-items"><a class="nav-link text-dark" href="#">RAGA</a></li>
+      </ul>
+    </div>
+    <div class="footer-box">
+      <h2 class="contact-title  text-center mt-2 fw-bold">Contact us</h2>
+        <p class="fs-5 text-dark fw-bold lh-lg">Email:eliteSuperwatches@gmail.com</p>
+        <p class="fs-5 text-dark fw-bold lh-lg">Phone:+91 9475152152</p>
+        <p class="fs-5 text-dark fw-bold lh-lg">Location:Bengaluru,Karnataka</p>
+    </div>
+    <div class="social-links ">            
+      <h3 class="social-title  text-center mt-2 fw-bold">Social Links</h3>
+      <div class="social-text">
+        <p class="fs-5 text-dark lh-lg">🅾𝐈𝐧𝐬𝐭𝐚𝐠𝐫𝐚𝐦 ★</p>
+      </div>
+    
+      <div class="social-text">
+        <p class="fs-5 text-dark fw-bold lh-lg">ⓕFacebook</p>
+      </div>
+    
+      <div class="social-text">
+        <p class="fs-5 text-dark fw-bold lh-lg">𝕏Twitter𝕏</p>
+      </div>
+    </div>     
+   
+</footer>
+<div class="footer-bottom bg-info border-top">
+    <p class="footer-content text-center fs- fw-bold">Copyright@Elitesuperwatches||All are reserved.</p>
+</div>   
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
